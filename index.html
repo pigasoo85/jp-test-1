@@ -10,48 +10,69 @@
     <meta name="keywords" content="Webデザインスクール, 未経験Webデザイナー, デザイン講座, Webデザイン 副業, 即戦力デザイナー, CHAPTER TWO" />
     <!-- favicon -->
     <link rel="icon" href="./favicon.ico" />
-    <!-- styles -->
-    <!-- styles system-->
-    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
 
+    <!-- styles -->
     <!-- 
     本デザインカンプでは、3種類のフォントが使われています。
-    Google Fonts:
-  - Noto Sans JP: Primary font for Japanese text and body content
-  - Barlow: Main English font for headings, UI text, and numbers
-  - Advent Pro: Decorative English font for logos and accent text
--->
+    Google Fonts: Noto Sans JP / Barlow / Advent Pro
+    -->
     <link href="https://fonts.googleapis.com/css2
 ?family=Noto+Sans+JP:wght@100;300;400;500;700;900
 &family=Advent+Pro:wght@100;200;300;400;500;600;700
 &family=Barlow:wght@100;200;300;400;500;600;700;800;900
 &display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <!-- styles site-->
+    <!-- 
+    サイト独自のスタイル
+    -->
     <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-
-
     <header class="site-header">
         <div class="site-header__container">
             <a href="/" class="site-header__logo" target="_blank">
                 <img src="./assets/images/logo.png" />
             </a>
-            <nav role="navigation" aria-label="主导航">
-                <!-- 导航菜单 -->
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#nav-01">受講者の声</a>
+                    </li>
+                    <li>
+                        <a href="#nav-02">選ばれる理由</a>
+                    </li>
+                    <li>
+                        <a href="#nav-03">受講料金</a>
+                    </li>
+                    <li>
+                        <a href="#nav-04">受講の流れ</a>
+                    </li>
+                    <li>
+                        <a href="#nav-05">よくあるご質問</a>
+                    </li>
+                    <li>
+                        <button class="btn-primary">
+                            Zoom無料相談はこちら
+                        </button>
+                    </li>
+                </ul>
             </nav>
-        </div>
+            <div class="menu-toogle" role="button"
+                onclick="javascript:alert('There is no mobile menu design in Figma, so i do nothing.')">
+                <img src="./assets/images/menu.svg">
+            </div>
+            <div>
+            </div>
 
     </header>
     <main class="site-container">
         <div class="site-slogan">
             <div class="site-slogan-element">
 
-                <div class="site-slogan-element__pop">
+                <div class="site-slogan-element__pop bg-secondary">
                     卒業後サポートが<i></i>続く！
                 </div>
                 <p>未経験から最短で</p>
@@ -72,7 +93,6 @@
 
         <div class="site-top-entry-container">
             <div class="site-entry">
-
                 <div class="site-entry_pop">
                     <span>10秒で簡単予約！質問相談何でもOK！</span>
                 </div>
@@ -81,15 +101,17 @@
                 </button>
             </div>
         </div>
-       
-    
+
+
 
 
 
         <div class="site-comment">
+
+            <div class="site-comment-crop"></div>
             <div class="site-comment__header">
                 <img src="./assets/images/logo-dark.png" class="site-comment__header-logo">
-                <h3 class="site-comment__header-text">デザインコースとは？</hh3>
+                <h3 class="site-comment__header-title">デザインコースとは？</hh3>
             </div>
 
             <div class="site-comment__header-section">
@@ -103,35 +125,62 @@
                     <img src="./assets/images/comment-banner-1.png" />
                 </div>
             </div>
-            <h3>受講者の声</h3>
-            <div class="site-comment__body-section">
-                <div class="site-comment__body-section-left">
-                    <img src="./assets/images/comment-banner-1.png" />
-                </div>
-                <div class="site-comment__body-section-right">
-                    <div><span class="site-comment__header-text-reverse">未経験から</span></div>
-                    <div><span class="site-comment__header-text-reverse">プロのWebデザイナーに！</span></div>
-                    <p>未経験の不安も、専属メンターの伴走と無制限の質問添削で解消。実務目線のフィードバックで、稼ぐ基礎が着実に身につきました。卒業後の
-                        サポートも心強く、商談同席も安心でした。</p>
-                    <p>M.Sさん</p>
 
+
+
+
+            <div class="site-comment__body">
+                <h3 id="nav-01" class="site-comment-voice-header">受講者の声</h3>
+
+                <div class="site-comment__body-wrapper">
+                    <div class="site-comment__body-section site-comment__body-l">
+
+                        <img src="./assets/images/comment-banner-2.png" />
+
+                        <div class="site-comment__body-section-right">
+                            <div><span class="site-comment__body-text-reverse">未経験から</span></div>
+                            <div><span class="site-comment__body-text-reverse">プロのWebデザイナーに！</span></div>
+                            <p>未経験の不安も、専属メンターの伴走と無制限の質問添削で解消。実務目線のフィードバックで、稼ぐ基礎が着実に身につきました。卒業後の
+                                サポートも心強く、商談同席も安心でした。</p>
+                            <p class="site-comment__sign">M.Sさん</p>
+
+                        </div>
+                    </div>
+                    <div class="site-comment__body-section site-comment__body-r">
+
+                        <img src="./assets/images/comment-banner-3.png" />
+
+                        <div class="site-comment__body-section-right">
+                            <div><span class="site-comment__body-text-reverse">専業主婦から</span></div>
+                            <div><span class="site-comment__body-text-reverse">Webデザイナーとして独立！</span></div>
+                            <p>育児と家事の合間でも、録画で何度も復習できて安心。分からない所は無制限で質問でき、丁寧な添削で一歩ずつ前進。未経験でも迷わず続けられました。卒業後も質問できて心強い。</p>
+                            <p class="site-comment__sign">T.Yさん</p>
+
+                        </div>
+                    </div>
+                    <div class="site-comment__body-section site-comment__body-l">
+
+                        <img src="./assets/images/comment-banner-4.png" />
+
+                        <div class="site-comment__body-section-right">
+                            <div><span class="site-comment__body-text-reverse">スキマ時間で学び</span></div>
+                            <div><span class="site-comment__body-text-reverse">フリーランスに転身！ </span></div>
+                            <p> 土日に集中学習、平日はスキマで復習。継続できたのは、即レスの質問サポートと添削のおかげ。録画講義で復習し、卒業後も相談でき、ゼロからでも仕事につながる力が養えました。</p>
+                            <p class="site-comment__sign">K.Rさん</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
+
         </div>
-   
 
-
-
-
-        
-
-        <div class="site-contact">
+        <div class="site-contact" style="background-image: url(./assets/images/bg-contact.png);">
             <div class="site-contact__mask"></div>
             <div class="dialog-pop-cotainer">
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        カリキュラムの詳細を知りたい！
+                        未経験からでも
+                        大丈夫？
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -140,7 +189,8 @@
 
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        自分にはどのコースが合ってる？
+                        自分には
+                        どのコースが合ってる？
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -168,7 +218,7 @@
 
         <div class="site-reason bg-primary">
 
-            <h3><span>ChapterTwoが選ばれる</span>
+            <h3 id="nav-02"><span>ChapterTwoが選ばれる</span>
                 3つの理由</h3>
             <div class="site-reason__divider"></div>
 
@@ -179,16 +229,18 @@
                         <div>Support</div>
                     </div>
                     <img src="./assets/images/reason-1.png">
-                    <h5>Web制作サービス
-                        「びるどる」と提携し
-                        卒業後の活動をサポート</h5>
-                    <p>
-                        ChapterTwoは、Web制作サービス
-                        「びるどる」と提携しています。
-                        卒業後はびるどるの「認定パートナー」として、
-                        Webデザイン案件を優先的に
-                        紹介してもらうことが可能です。
-                    </p>
+                    <div class="site-reason-card__text-group">
+                        <h5>Web制作サービス
+                            「びるどる」と提携し
+                            卒業後の活動をサポート</h5>
+                        <p>
+                            ChapterTwoは、Web制作サービス
+                            「びるどる」と提携しています。
+                            卒業後はびるどるの「認定パートナー」として、
+                            Webデザイン案件を優先的に
+                            紹介してもらうことが可能です。
+                        </p>
+                    </div>
                 </div>
 
                 <div class="site-reason-card site-reason-card-right">
@@ -197,16 +249,18 @@
                         <div>Curriculum</div>
                     </div>
                     <img src="./assets/images/reason-2.png">
-                    <h5>Web制作サービス
-                        「びるどる」と提携し
-                        卒業後の活動をサポート</h5>
-                    <p>
-                        ChapterTwoは、Web制作サービス
-                        「びるどる」と提携しています。
-                        卒業後はびるどるの「認定パートナー」として、
-                        Webデザイン案件を優先的に
-                        紹介してもらうことが可能です。
-                    </p>
+                    <div class="site-reason-card__text-group">
+                        <h5>案件をもとにしたカリキュラムで
+                            実践的スキルを身に着けて
+                            すぐに副業開始可能</h5>
+                        <p>
+                            提携サービス「びるどる」が過去実際に受注した
+                            案件をもとにカリキュラムを作成しており、
+                            他のスクールではできない超実践的なスキル
+                            習得が可能です。そのため、卒業後はすぐに
+                            「びるどる」の案件を受けることができます。
+                        </p>
+                    </div>
                 </div>
 
                 <div class="site-reason-card site-reason-card-left">
@@ -216,45 +270,48 @@
 
                     </div>
                     <img src="./assets/images/reason-3.png">
-                    <h5>Web制作サービス
-                        「びるどる」と提携し
-                        卒業後の活動をサポート</h5>
-                    <p>
-                        ChapterTwoは、Web制作サービス
-                        「びるどる」と提携しています。
-                        卒業後はびるどるの「認定パートナー」として、
-                        Webデザイン案件を優先的に
-                        紹介してもらうことが可能です。
-                    </p>
+                    <div class="site-reason-card__text-group">
+                        <h5>専属メンターが
+                            入学から稼げるまで伴走し
+                            挫折させない万全のサポート</h5>
+                        <p>
+                            入学してから稼げるようになるまで、
+                            専属のメンターがマンツーマンで伴走。
+                            挫折せずに最後まで学習できるよう、
+                            全力でサポートいたします。
+                        </p>
+                    </div>
                 </div>
             </div>
 
 
         </div>
-        <div class="site-get-step bg-secondary">
-            <h3>ChapterTwoの
-                案件獲得サポート</h3>
-            <div class="site-get-step-lists">
-                <div class="site-get-step-item">
-                    <img src="./assets/images/get-step-banner-1.png" />
-                    <h5>提携サイト「びるどる」
-                        からの案件紹介</h5>
-                    <p>提携しているWebデザイン制作サービスの「びるどる」から案件を紹介するため、卒業後すぐに副業で稼ぎ始められます！</p>
-                </div>
-                <div class="site-get-step-item">
-                    <img src="./assets/images/get-step-banner-2.png" />
-                    <h5>営業は完全に不要</h5>
-                    <p>卒業生に紹介される案件は、受注までのクライアントワークをすべて「びるどる」が行って確実に受注に繋げるため、卒業生は営業不要で案件を獲得できる仕組みです。</p>
-                </div>
-                <div class="site-get-step-item">
-                    <img src="./assets/images/get-step-banner-3.png" />
-                    <h5>サポートセンターが
-                        制作を全面サポート</h5>
-                    <p>紹介された案件の進め方でわからない部分があれば、専門のサポートセンターが制作をサポートし、確実な納品と報酬の獲得をお手伝いします。</p>
+        <div class="site-get-step bg-primary">
+            <div class="site-get-step-container bg-secondary">
+                <h3>ChapterTwoの
+                    案件獲得サポート</h3>
+                <div class="site-get-step-lists">
+                    <div class="site-get-step-item">
+                        <img src="./assets/images/get-step-banner-1.png" />
+                        <h5>提携サイト「びるどる」
+                            からの案件紹介</h5>
+                        <p>提携しているWebデザイン制作サービスの「びるどる」から案件を紹介するため、卒業後すぐに副業で稼ぎ始められます！</p>
+                    </div>
+                    <div class="site-get-step-item">
+                        <img src="./assets/images/get-step-banner-2.png" />
+                        <h5>営業は完全に不要</h5>
+                        <p>卒業生に紹介される案件は、受注までのクライアントワークをすべて「びるどる」が行って確実に受注に繋げるため、卒業生は営業不要で案件を獲得できる仕組みです。</p>
+                    </div>
+                    <div class="site-get-step-item">
+                        <img src="./assets/images/get-step-banner-3.png" />
+                        <h5>サポートセンターが
+                            制作を全面サポート</h5>
+                        <p>紹介された案件の進め方でわからない部分があれば、専門のサポートセンターが制作をサポートし、確実な納品と報酬の獲得をお手伝いします。</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="site-member">
+        <div class="site-member bg-primary">
             <h3>講師紹介</h3>
             <div class="site-member-container">
                 <div class="swiper-button-prev"></div>
@@ -264,7 +321,7 @@
                         <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="site-member-card bg-secondary">
-                                <div class="site-member-card__header ">
+                                <div class="site-member-card__header">
                                     <div>
                                         <div class="site-member-card__header-name">
                                             長田 圭二先生
@@ -396,12 +453,13 @@
             <div class="swiper-pagination"></div>
         </div>
 
-        <div class="site-contact">
+        <div class="site-contact" style="background-image: url(./assets/images/bg-contact.png) ">
             <div class="site-contact__mask"></div>
             <div class="dialog-pop-cotainer">
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        カリキュラムの詳細を知りたい！
+                        未経験からでも
+                        大丈夫？
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -410,7 +468,8 @@
 
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        自分にはどのコースが合ってる？
+                        自分には
+                        どのコースが合ってる？
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -437,7 +496,7 @@
         </div>
         <div class="site-tier">
             <div class="site-tier-container">
-                <h3 class="site-tier-title">コース・料金</h3>
+                <h3 class="site-tier-title" id="nav-03">コース・料金</h3>
                 <div class="site-tier-money-area-wrapper">
                     <div class="site-tier-money-area-inner">
                         <div class="site-tier-money-tag">
@@ -585,12 +644,13 @@
 
 
 
-        <div class="site-contact">
+        <div class="site-contact" style="background-image: url(./assets/images/bg-contact-2.png);">
             <div class="site-contact__mask"></div>
             <div class="dialog-pop-cotainer">
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        カリキュラムの詳細を知りたい！
+                        カリキュラムの
+                        詳細を知りたい！
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -599,7 +659,8 @@
 
                 <div class="dialog-pop dialog-pop-primary ">
                     <div class="dialog-pop-content">
-                        自分にはどのコースが合ってる？
+                        自分には
+                        どのコースが合ってる？
                     </div>
                     <div class="dot1"></div>
                     <div class="dot2"></div>
@@ -608,11 +669,11 @@
 
             </div>
             <div class="center">
-                <div class="site-contact-content">
-                    <h3>無料相談実施中！</h3>
+                <div class="site-contact-content site-contact-content-text-sm ">
+                    <h3>無料カウンセリングでは、<br />各コースのカリキュラム詳細もご案内！</h3>
                 </div>
             </div>
-            <h5>プロのカウンセラーになんでも相談可能！</h5>
+            <h5>気になる疑問/相談は全てプロのカウンセラーが即解消！</h5>
             <div class="site-entry">
                 <div class="site-entry_pop">
                     <span>10秒で簡単予約！質問相談何でもOK！</span>
@@ -626,7 +687,7 @@
         </div>
         <div class="site-step">
             <div class="site-step__wrapper">
-                <h3>受講の流れ</h3>
+                <h3 id="nav-04">受講の流れ</h3>
                 <div class="site-step-container">
                     <div class="site-step__item-wrapper">
                         <div class="site-step__number">1</div>
@@ -659,7 +720,7 @@
         </div>
         <div class="site-qa">
             <div class="site-qa-wrapper">
-                <h3>よくある質問</h3>
+                <h3 id="nav-05">よくある質問</h3>
                 <div class="site-qa-section">
                     <div class="site-qa-item">
                         <div class="site-qa-item-q">
@@ -729,7 +790,7 @@
 <script>
     const swiper = new Swiper('.swiper', {
         autoplay: {
-            delay: 3000,
+            delay: 300000,
         },
         loop: true,
         slidesPerView: 1,
@@ -737,7 +798,7 @@
         breakpoints: {
             1024: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 80,
             }
         },
 
