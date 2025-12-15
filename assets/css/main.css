@@ -108,8 +108,8 @@ body {
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.05em;
-    
-    
+
+
 }
 
 .dialog-pop .dot1 {
@@ -591,6 +591,7 @@ body {
         color: #EFEFEF;
 
     }
+
     .site-comment-crop {
         height: 700px;
         clip-path: polygon(0 0,
@@ -829,13 +830,14 @@ body {
 
 @media (min-width: 1024px) {
     .site-reason h3 {
-    font-size: 48px; 
-    margin-bottom: 40px;
+        font-size: 48px;
+        margin-bottom: 40px;
     }
 
     .site-reason h3 span {
         font-size: 36px;
     }
+
     .site-reason-card-lists {
         display: flex;
         flex-direction: column;
@@ -843,60 +845,68 @@ body {
         max-width: 663px;
         margin: 0px auto;
     }
+
     .site-reason-card {
         display: flex;
         flex-direction: row;
-      
+
         min-height: 362px;
         box-sizing: border-box;
     }
-    .site-reason-card h5{
+
+    .site-reason-card h5 {
         margin-top: 0;
     }
+
     .site-reason-card img {
         align-self: flex-end;
         width: 278px;
         height: 195px;
     }
-    .site-reason-card__text-group{
-       align-self:center;
-         padding: 0px 20px;
-         
+
+    .site-reason-card__text-group {
+        align-self: center;
+        padding: 0px 20px;
+
     }
-    
-    .site-reason-card:nth-child(2){
+
+    .site-reason-card:nth-child(2) {
         flex-direction: row-reverse;
 
     }
-    
-    .site-reason-card:nth-child(1) img{
-         transform: translateX(-54px) translateY(42px);
+
+    .site-reason-card:nth-child(1) img {
+        transform: translateX(-54px) translateY(42px);
     }
-    .site-reason-card:nth-child(2) img{
+
+    .site-reason-card:nth-child(2) img {
         transform: translateX(54px) translateY(42px);
 
     }
-    .site-reason-card:nth-child(3) img{
+
+    .site-reason-card:nth-child(3) img {
         transform: translateX(-54px) translateY(42px);
     }
-    
 
-     .site-reason-card:nth-child(1) .site-reason-card__label{
+
+    .site-reason-card:nth-child(1) .site-reason-card__label {
         bottom: 196px;
         left: -34px;
         top: unset;
     }
-    .site-reason-card:nth-child(2) .site-reason-card__label{
+
+    .site-reason-card:nth-child(2) .site-reason-card__label {
         bottom: 196px;
         right: -34px;
         left: unset;
         top: unset;
 
     }
-    .site-reason-card:nth-child(3) .site-reason-card__label{
+
+    .site-reason-card:nth-child(3) .site-reason-card__label {
         bottom: 196px;
         left: -34px;
-         top: unset;
+        top: unset;
     }
 }
 
@@ -951,25 +961,33 @@ body {
 @media (min-width: 1024px) {
     .site-get-step-container {
         padding: 120px 28px 170px 28px;
-        clip-path: polygon(0 0, /* 左上 */ 100% 120px, /* 右上 */ 100% 100%, /* 右下 */ 0 668px /* 左下 */);
+        clip-path: polygon(0 0,
+                /* 左上 */
+                100% 120px,
+                /* 右上 */
+                100% 100%,
+                /* 右下 */
+                0 668px
+                /* 左下 */
+            );
     }
 
     .site-get-step h3 {
-      
+
         font-size: 36px;
         line-height: 1.2;
         margin-bottom: 40px;
-       
+
     }
 
     .site-get-step .site-get-step-item:nth-child(2) {
-    transform: translateY(40px);
+        transform: translateY(40px);
     }
 
     .site-get-step .site-get-step-item:nth-child(3) {
-    transform: translateY(80px);
+        transform: translateY(80px);
     }
-    
+
     .site-get-step .site-get-step-lists {
         display: flex;
         flex-direction: row;
@@ -995,7 +1013,7 @@ body {
 
 
 .site-member {
-    padding: 70px 0px 80px 0px; 
+    padding: 70px 0px 80px 0px;
 }
 
 .site-member h3 {
@@ -1057,8 +1075,9 @@ body {
     margin-bottom: 5px;
     border-bottom: 1px solid #A8A8A8AA;
 }
+
 .site-member-card__body p {
-   
+
     line-height: 1.2;
 }
 
@@ -1088,33 +1107,35 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .site-member-container{
+    .site-member-container {
         max-width: 1268px;
         margin: 0px auto;
         box-sizing: border-box;
     }
-    .site-member-container .swiper-button-prev
-    {
+
+    .site-member-container .swiper-button-prev {
         width: 48px;
         height: 48px;
         margin-right: 80px;
     }
-   
-    .site-member-container .swiper-button-next
-    {
+
+    .site-member-container .swiper-button-next {
         width: 48px;
         height: 48px;
         margin-left: 80px;
     }
+
     .site-member .site-member-card__header {
-       
         padding: 10px 30px;
     }
 
     .site-member-card__body {
-      
         padding: 20px 30px;
 
+    }
+
+    .site-member {
+        padding-top: 20px;
     }
 }
 
@@ -1399,7 +1420,8 @@ body {
     text-align: center;
     color: #fff;
 }
-.site-contact .site-contact-content-text-sm h3{
+
+.site-contact .site-contact-content-text-sm h3 {
     font-size: 24px;
 }
 
